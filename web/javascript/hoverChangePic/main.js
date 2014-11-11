@@ -28,6 +28,24 @@ require(["jquery","hoverChangePic/jquery.lightbox-0.5"], function () {
     //鼠标移出灰色图片显示，彩色图片隐藏
    $block.on("mouseleave",leave);
 
+    var $pic9=$(".block_9 .pic");
+    var $pic10=$(".block_10 .pic");
+
+    $pic9.on("mouseenter",function(){
+        $pic10.css('left',"100%");
+    });
+
+    $pic9.on("mouseleave",function(){
+        $pic10.css('left',"0");
+    });
+
+    $pic10.on("mouseenter",function(){
+        $pic9.css('left',"-100%");
+    });
+
+    $pic10.on("mouseleave",function(){
+        $pic9.css('left',"0");
+    });
 
    function enter(){
        var $radio=$(this).find(".radio");
@@ -40,7 +58,7 @@ require(["jquery","hoverChangePic/jquery.lightbox-0.5"], function () {
         var d2 = $.Deferred();
         //定义when与回调
         $.when(d1,d2).done(function(){
-            $radio.fadeIn(1000);
+            $radio.fadeIn(500);
             $(this).find(".shade .bg").attr("top","100%");
             $(this).find(".shade .tex").attr("top","200%");
         })
