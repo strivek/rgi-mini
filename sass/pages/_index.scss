@@ -211,7 +211,7 @@
         -ms-transition: all 1s;
         -o-transition: all 1s;
         transition: all 0.4s;
-        top: 123%;
+        top: 109%;
         left: 0;
         width: 100%;
         .tex {
@@ -235,6 +235,7 @@
       margin: 18px auto 0;
       width: 30px;
       height: 30px;
+      cursor: pointer;
       img {
         width: 100%;
       }
@@ -636,6 +637,7 @@
     .move {
       position: relative;
       width: 100%;
+      img{display: block;}
       #experience {
         //  perspective: 800px;
         width: 100%;

@@ -1,6 +1,6 @@
 require(["jquery","hoverChangePic/jquery.lightbox-0.5"], function () {
    var $main=$(".m-main-chy");
-    var $mn_f=$(".mn_f");
+   var $mn_f=$(".mn_f");
    var $block=$mn_f.find(".block"); //获取block块
    var $Cradio=$block.find(".radio");//点击按钮
    var $hd_show=$(".header .head_show");
@@ -9,14 +9,25 @@ require(["jquery","hoverChangePic/jquery.lightbox-0.5"], function () {
     var $hd_link=$hd_show.find(".link");
     var $mid=$(".middle .f_wrap5");//获取logo块
     var $logoBlock=$mid.find(".LogoBlock");
+    var $hd_list=$main.find(".header_list");
+    var $t_con=$hd_list.find(".con");
+    var $t_h1=$hd_list.find(".tit_h1");
+    var $t_h2=$hd_list.find(".tit_h2");
+    var $hd_h1=$hd_show.find(".title");
+    var $d_radio=$t_con.find(".d_radio");
+
+    $("body").animate({'scrollTop':0},1000);
+
+    //点击页面顶部按钮，页面下拉
+    $d_radio.on("click",function(){
+    $("body").animate({'scrollTop':800},1000);
+
+
+    });
 
     //顶部菜单按钮，单击展开下拉菜单
     $menu.on("click",function(){
-     var $hd_list=$main.find(".header_list");
-     var $t_con=$hd_list.find(".con");
-     var $t_h1=$hd_list.find(".tit_h1");
-     var $t_h2=$hd_list.find(".tit_h2");
-     var $hd_h1=$hd_show.find(".title");
+
         if($hd_list.height()==0)
         { $(this).find(".icon").hide().siblings(".icon2").show(); //鼠标点击，按钮旋转90度
             $s_rg.animate({"margin-top":"33px","color":"#fff"},//褐色rgi_brand 文字下落
@@ -59,24 +70,37 @@ require(["jquery","hoverChangePic/jquery.lightbox-0.5"], function () {
    $block.on("mouseleave",leave);
 
     //block10、block9鼠标滑过左右拉开
+    var $yunj=$(".yunj");
     var $pic9=$(".block_9 .pic");
     var $pic10=$(".block_10 .pic");
 
     $pic9.on("mouseenter",function(){
         $pic10.css('left',"100%");
-    });
-
-    $pic9.on("mouseleave",function(){
-        $pic10.css('left',"0");
+        $yunj.data("sld","pic10");
     });
 
     $pic10.on("mouseenter",function(){
         $pic9.css('left',"-100%");
+        $yunj.data("sld","pic9");
     });
 
-    $pic10.on("mouseleave",function(){
-        $pic9.css('left',"0");
+    $yunj.on("mouseleave",function(){
+        var sld=$(this).data("sld");
+        if(sld=="pic10")
+        {
+            $pic10.css('left',"0");
+        }
+     else if(sld=="pic9")
+        {
+            $pic9.css("left","0");
+        }
     });
+
+
+
+   /* $yunj.on("mouseleave",function(){
+        $pic9.css('left',"0");
+    });*/
 
     //鼠标滑过logo商标变换图片
     $logoBlock.on("mouseenter",function(){
