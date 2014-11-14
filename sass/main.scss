@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 //方法
-@import "helper/reset";
+@import "helper/reset";//全局初始化
 
 //通用部分
-@import "partials/footer";
-@import "partials/header";
+@import "partials/footer";//底部
+@import "partials/header";//头部
 
 //页面
-@import "pages/index";
+@import "pages/index";//index.html

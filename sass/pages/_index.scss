@@ -27,6 +27,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    position: relative;
+    padding-left: 20px;
     margin: 0 auto;
     width: 1170px;
     overflow: hidden;
@@ -35,42 +37,50 @@
       width: 100%;
     }
     font-size: 0;
-    position: relative;
-    padding-left: 20px;
     height: 114px;
     .title {
+      position: absolute;
+      bottom: 34px;
       display: inline-block;
       color: #3b1d30l;
-      font-size: 18px;
-      height: 114px;
-      line-height: 114px;
+      font-family:"微软雅黑";
+      h1{
+        font-size:16px;
+      }
+      h2{font-size:16px;
+          font-weight: normal;
+      }
     }
     .logo {
-      display: inline-block;
       position: absolute;
-      top: 0;
       left: 50%;
-      margin-left: -39px;
+      bottom: 34px;
+      margin-left: -97px;
+      width: 16.666%;
+      -webkit-transition: all 2s;
+      -moz-transition: all 2s;
+      -ms-transition: all 2s;
+      -o-transition: all 2s;
+      transition: all 2s;
       .rgi {
-        width: 78px;
+        width:100%;
         img {
           width: 100%;
         }
-
       }
-      .slide_rg {
+/*      .slide_rg {
         margin-top: 10px;
         width: 78px;
         -webkit-transition: all 0.2s;
-        -moz-transition: all 1s;
-        -ms-transition: all 1s;
-        -o-transition: all 1s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
         transition: all 0.2s;
         img {
           width: 100%;
           display: block;
         }
-      }
+      }*/
     }
     .link {
       -webkit-transition: all 1s;
@@ -80,9 +90,9 @@
       transition: all 1s;
       display: block;
       position: absolute;
-      right: -16%;
+      right: -14%;
       bottom: 50px;
-      font-size: 14px;
+      font-size: 16px;
       opacity: 0;
       filter: alpha(opacity=0);
       a {
@@ -91,12 +101,13 @@
         @media (max-width: 768px) {
           padding: 0 6px;
         }
+        border-right:1px solid #2c171a;
+        font-family: "微软雅黑";
         color: #2c171a;
-        font-size: 14px;
+        font-size: 16px;
       }
       .f-link {
-        border-right: 1px solid #2c171a;
-
+       border-right:none;
       }
     }
     .radio {
@@ -152,11 +163,11 @@
     position: relative;
     overflow: hidden;
     height: 0;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
     .img_bg {
       width: 100%;
       img {
@@ -169,77 +180,68 @@
       left: 0;
       top: 0;
       width: 100%;
-      .tit_h2 {
-        display: none;
-        height: 45px;
-        line-height: 45px;
-        text-align: center;
-        font-size: 14px;
-        color: #fff;
-        font-family: "微软雅黑";
-        background: url(../images/txt_h1-bg.png) 0 -9px no-repeat;
-        @media (max-width: 1110px) {
-          background-position: 0 -1px;
-        }
-        background-size: 100%;
-      }
       .tit_h1 {
         -webkit-transition: all 0.4s;
-        -moz-transition: all 1s;
-        -ms-transition: all 1s;
-        -o-transition: all 1s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
         transition: all 0.4s;
         margin-top: -72px;
-        background: url(../images/txt_h1-bg.png)0 -4px no-repeat;
-        @media (max-width: 1110px) {
-          background-position: 0 5px;
-        }
         background-size: 100%;
-        height: 50px;
-        line-height: 50px;
         text-align: center;
         font-size: 14px;
         color: #92818d;
         font-family: 'Uni';
       }
-      .con {
-        position: absolute;
-        opacity: 0;
-        filter: alpha(opacity=0);
-        -webkit-transition: all 0.4s;
-        -moz-transition: all 1s;
-        -ms-transition: all 1s;
-        -o-transition: all 1s;
-        transition: all 0.4s;
-        top: 109%;
-        left: 0;
-        width: 100%;
+      .heng{margin:26px auto 22px;width:20px; height: 1px; background: #fff; }
         .tex {
           @media (max-width: 1190px) {
             width: 90%;
             font-size: 12px;
           }
           width: 66.7%;
-          margin: 4px auto 0;
+          margin: -200px auto 0;
           text-align: center;
           color: #fff;
-          font-size: 12px;
+          font-size: 14px;
           font-weight: normal;
-          line-height: 16px;
+          line-height: 18px;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s;
         }
-      }
+  .ydhl{
+    width:66.7%;
+    margin: 20px auto 0;
+    color:#fff;
+    font-size:14px;
+    font-weight: normal;
+    text-align: center;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+      .d_radio {
+         display: block;
+         margin: -235px auto 0;
+         width: 30px;
+         height: 30px;
+         cursor: pointer;
+         -webkit-transition: all 0.4s;
+         -moz-transition: all 0.4s;
+         -ms-transition: all 0.4s;
+         -o-transition: all 0.4s;
+         transition: all 0.4s;
+         img {
+           width: 100%;
+         }
+       }
+    }
 
-    }
-    .d_radio {
-      display: block;
-      margin: 18px auto 0;
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
-      img {
-        width: 100%;
-      }
-    }
   }
   .banner {
     width: 100%;
@@ -267,9 +269,18 @@
           height: auto;
         }
         .showPic2 {
-          display: none;
+          position: absolute;
+          top:0;
+          left:0;
           width: 100%;
           height: auto;
+          opacity: 0;
+          filter:alpha(opacity=0);
+          -webkit-transition: all 1s;
+          -moz-transition: all 1s;
+          -ms-transition: all 1s;
+          -o-transition: all 1s;
+          transition: all 1s;
         }
         .shade {
           display: block;
@@ -588,6 +599,18 @@
       }
       .message {
         width: 100%;
+        position: relative;
+        .text{
+          width: 100%;
+          height: 100%;
+         /* opacity: 0;
+          filter:alpha(opacity=0);*/
+          position: absolute;
+          top:0;
+          left:0;
+          font-size:16px;
+          color:#fff;
+        }
       }
       .block_9 .pic {
         position: relative;
@@ -599,6 +622,25 @@
         .tex_con{position: absolute;
           top:0;
           left:0;
+          width: 100%;
+          height:100%;
+          h2{margin-top:10%; padding-left:20px;font-size:16px; font-weight: bold; }
+          h1{margin-top: 30%;padding-left:20px;font-size:28px;
+            cursor: pointer;
+            }
+          &:hover{.change{opacity: 1;}
+          }
+          p{font-size:14px; padding-left:20px;color:#221815; margin-top: 18px;
+            -webkit-transition: all 1.5s;
+            -moz-transition: all 1.5s;
+            -ms-transition: all 1.5s;
+            -o-transition: all 1.5s;
+            transition: all 1.5s;
+            opacity: 0;
+            filter:alpha(opacity=0);
+            span{display: block; margin-top: 6px;
+            }
+          }
          }
       }
       .block_10 .pic {
@@ -617,6 +659,7 @@
     .f_wrap5 {
       width: 100%;
       .LogoBlock {
+        position: relative;
         float: left;
         width: 16.666667%;
         @media (max-width: 768px) {
@@ -625,12 +668,25 @@
         img {
           width: 100%;
           display: block;
+
         }
         .showPic1 {
           display: block;
+          width:100%;
         }
         .showPic2 {
-          display: none;
+          width: 100%;
+          display: block;
+          position: absolute;
+          top:0;
+          left:0;
+          opacity: 0;
+          filter:alpha(opacity=0);
+          -webkit-transition: all 1.5s;
+          -moz-transition: all 1.5s;
+          -ms-transition: all 1.5s;
+          -o-transition: all 1.5s;
+          transition: all 1.5s;
         }
       }
     }
@@ -1004,8 +1060,8 @@
   position: absolute;
   top: 40%;
   left: 0%;
-  height: 25%;
-  width: 100%;
+  height: 25px;
+  width: 25px;
   text-align: center;
   line-height: 0;
 }
