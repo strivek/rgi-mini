@@ -43,12 +43,13 @@
       bottom: 34px;
       display: inline-block;
       color: #3b1d30l;
-      font-family:"微软雅黑";
-      h1{
-        font-size:16px;
+      font-family: "微软雅黑";
+      h1 {
+        font-size: 16px;
       }
-      h2{font-size:16px;
-          font-weight: normal;
+      h2 {
+        font-size: 16px;
+        font-weight: normal;
       }
     }
     .logo {
@@ -63,24 +64,24 @@
       -o-transition: all 2s;
       transition: all 2s;
       .rgi {
-        width:100%;
+        width: 100%;
         img {
           width: 100%;
         }
       }
-/*      .slide_rg {
-        margin-top: 10px;
-        width: 78px;
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        -ms-transition: all 0.2s;
-        -o-transition: all 0.2s;
-        transition: all 0.2s;
-        img {
-          width: 100%;
-          display: block;
-        }
-      }*/
+      /*      .slide_rg {
+              margin-top: 10px;
+              width: 78px;
+              -webkit-transition: all 0.2s;
+              -moz-transition: all 0.2s;
+              -ms-transition: all 0.2s;
+              -o-transition: all 0.2s;
+              transition: all 0.2s;
+              img {
+                width: 100%;
+                display: block;
+              }
+            }*/
     }
     .link {
       -webkit-transition: all 1s;
@@ -101,13 +102,13 @@
         @media (max-width: 768px) {
           padding: 0 6px;
         }
-        border-right:1px solid #2c171a;
+        border-right: 1px solid #2c171a;
         font-family: "微软雅黑";
         color: #2c171a;
         font-size: 16px;
       }
       .f-link {
-       border-right:none;
+        border-right: none;
       }
     }
     .radio {
@@ -193,53 +194,58 @@
         color: #92818d;
         font-family: 'Uni';
       }
-      .heng{margin:26px auto 22px;width:20px; height: 1px; background: #fff; }
-        .tex {
-          @media (max-width: 1190px) {
-            width: 90%;
-            font-size: 12px;
-          }
-          width: 66.7%;
-          margin: -200px auto 0;
-          text-align: center;
-          color: #fff;
-          font-size: 14px;
-          font-weight: normal;
-          line-height: 18px;
-          -webkit-transition: all 0.4s;
-          -moz-transition: all 0.4s;
-          -ms-transition: all 0.4s;
-          -o-transition: all 0.4s;
-          transition: all 0.4s;
+      .heng {
+        margin: 26px auto 22px;
+        width: 20px;
+        height: 1px;
+        background: #fff;
+      }
+      .tex {
+        @media (max-width: 1190px) {
+          width: 90%;
+          font-size: 12px;
         }
-  .ydhl{
-    width:66.7%;
-    margin: 20px auto 0;
-    color:#fff;
-    font-size:14px;
-    font-weight: normal;
-    text-align: center;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-  }
+        width: 66.7%;
+        margin: -200px auto 0;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 18px;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+      }
+      .ydhl {
+        width: 66.7%;
+        margin: 20px auto 0;
+        color: #fff;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+      }
       .d_radio {
-         display: block;
-         margin: -235px auto 0;
-         width: 30px;
-         height: 30px;
-         cursor: pointer;
-         -webkit-transition: all 0.4s;
-         -moz-transition: all 0.4s;
-         -ms-transition: all 0.4s;
-         -o-transition: all 0.4s;
-         transition: all 0.4s;
-         img {
-           width: 100%;
-         }
-       }
+        display: block;
+        margin: -235px auto 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        img {
+          width: 100%;
+        }
+      }
     }
 
   }
@@ -270,12 +276,12 @@
         }
         .showPic2 {
           position: absolute;
-          top:0;
-          left:0;
+          top: 0;
+          left: 0;
           width: 100%;
           height: auto;
           opacity: 0;
-          filter:alpha(opacity=0);
+          filter: alpha(opacity=0);
           -webkit-transition: all 1s;
           -moz-transition: all 1s;
           -ms-transition: all 1s;
@@ -315,7 +321,7 @@
                 font-size: 20px;
               }
               @media (max-width: 768px) {
-                font-size:  30px;
+                font-size: 30px;
               }
               font-size: 26px;
               font-family: "微软雅黑";
@@ -347,7 +353,7 @@
                   font-size: 30px;
                 }
                 @media (max-width: 768px) {
-                font-size:  50px;
+                  font-size: 50px;
                 }
               }
               .heng {
@@ -600,56 +606,142 @@
       .message {
         width: 100%;
         position: relative;
-        .text{
+        .text {
           width: 100%;
           height: 100%;
-         /* opacity: 0;
-          filter:alpha(opacity=0);*/
+          /* opacity: 0;
+           filter:alpha(opacity=0);*/
           position: absolute;
-          top:0;
-          left:0;
-          font-size:16px;
-          color:#fff;
+          top: 0;
+          left: 0;
+          font-size: 16px;
+          color: #fff;
         }
       }
       .block_9 .pic {
+        -webkit-transition: all 1.5s;
+        -moz-transition: all 1.5s;
+        -ms-transition: all 1.5s;
+        -o-transition: all 1.5s;
+        transition: all 1.5s;
         position: relative;
         left: 0;
         top: 0;
         margin-top: -82%;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-        .tex_con{position: absolute;
-          top:0;
-          left:0;
+        .tex_con {
+          position: absolute;
+          top: 0;
+          left: 0;
           width: 100%;
-          height:100%;
-          h2{margin-top:10%; padding-left:20px;font-size:16px; font-weight: bold; }
-          h1{margin-top: 30%;padding-left:20px;font-size:28px;
-            cursor: pointer;
-            }
-          &:hover{.change{opacity: 1;}
+          height: 100%;
+          h2 {
+            margin-top: 10%;
+            padding-left: 20px;
+            font-size: 16px;
+            font-weight: bold;
           }
-          p{font-size:14px; padding-left:20px;color:#221815; margin-top: 18px;
+          h1 {
+            margin-top: 30%;
+            padding-left: 20px;
+            font-size: 28px;
+            cursor: pointer;
+          }
+          &:hover {
+            .change {
+              opacity: 1;
+            }
+          }
+          p {
+            font-size: 14px;
+            padding-left: 20px;
+            color: #221815;
+            margin-top: 18px;
             -webkit-transition: all 1.5s;
             -moz-transition: all 1.5s;
             -ms-transition: all 1.5s;
             -o-transition: all 1.5s;
             transition: all 1.5s;
             opacity: 0;
-            filter:alpha(opacity=0);
-            span{display: block; margin-top: 6px;
+            filter: alpha(opacity=0);
+            span {
+              display: block;
+              margin-top: 6px;
             }
           }
-         }
+        }
       }
       .block_10 .pic {
+        -webkit-transition: all 1.5s;
+        -moz-transition: all 1.5s;
+        -ms-transition: all 1.5s;
+        -o-transition: all 1.5s;
+        transition: all 1.5s;
         position: relative;
         left: 0;
         top: 0;
         margin-top: -82%;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
+        .tex_con {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          color: #fff;
+          font-family: "微软雅黑";
+          h2 {
+            padding-right: 20px;
+            margin-top: 10%;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: right;
+          }
+          h1 {
+            padding-right: 20px;
+            text-align: right;
+            margin-top: 30px;
+            img {
+              width: 99px;
+              display: inline-block;
+              height: 49px;
+            }
+          }
+          h3 {
+            padding-right: 20px;
+            font-size: 18px;
+            font-family: "Myriad Pro";
+            font-weight: normal;
+            text-align: right;
+          }
+          .change {
+            .st {
+              padding-right: 20px;
+              display: block;
+              font-family: "微软雅黑";
+              font-size: 26px;
+              text-align: right;
+            }
+            .s1 {
+              margin-top: 20%;
+            }
+            .hide_t{
+              -webkit-transition: all 1.5s;
+              -moz-transition: all 1.5s;
+              -ms-transition: all 1.5s;
+              -o-transition: all 1.5s;
+              transition: all 1.5s;
+              opacity: 0;
+              filter:alpha(opacity=0);
+              margin-top: 22px;
+            p {
+              padding-right: 20px;
+              text-align: right;
+              margin-top: 5px;
+            }
+            }
+          }
+          &:hover{.hide_t{opacity: 1;
+            filter:alpha(opacity=1);}}
+        }
       }
       img {
         width: 100%;
@@ -672,16 +764,16 @@
         }
         .showPic1 {
           display: block;
-          width:100%;
+          width: 100%;
         }
         .showPic2 {
           width: 100%;
           display: block;
           position: absolute;
-          top:0;
-          left:0;
+          top: 0;
+          left: 0;
           opacity: 0;
-          filter:alpha(opacity=0);
+          filter: alpha(opacity=0);
           -webkit-transition: all 1.5s;
           -moz-transition: all 1.5s;
           -ms-transition: all 1.5s;
@@ -693,19 +785,21 @@
     .move {
       position: relative;
       width: 100%;
-      img{display: block;}
+      img {
+        display: block;
+      }
       #experience {
         //  perspective: 800px;
         width: 100%;
 
         overflow: hidden;
         position: absolute;
-        top:130px;
-        left:0;
+        top: 130px;
+        left: 0;
         height: 350px;
         z-index: 20;
       }
-      #lines{
+      #lines {
         position: absolute;
         top: 0;
         left: 0;
@@ -713,24 +807,24 @@
         pointer-events: none;
         opacity: .55;
       }
-      #mac{
+      #mac {
         position: absolute;
-        top:40px;
-        left:590px;
+        top: 40px;
+        left: 590px;
         z-index: 21;
         width: 432px;
         height: 364px;
         .canvas2 {
           position: absolute;
-          left:20px;
+          left: 20px;
           top: 60px;
           width: 396px;
-          height:200px;
-          background-color: rgba(0,0,0,.2);
+          height: 200px;
+          background-color: rgba(0, 0, 0, .2);
         }
         @media (max-width: 991px) {
-          top:40px;
-          left:0px;
+          top: 40px;
+          left: 0px;
 
         }
 
@@ -747,7 +841,7 @@
 
       #macbook {
         position: absolute;
-        left:400px;
+        left: 400px;
         top: 230px;
         width: 364px;
         height: 208px;
@@ -762,58 +856,60 @@
         }
 
       }
-      #ipad{
+      #ipad {
         position: absolute;
-        left:920px;
+        left: 920px;
         top: 202px;
         width: 158px;
         height: 238px;
         z-index: 22;
         @media (max-width: 991px) {
-          top:40px;
-          left:480px;
+          top: 40px;
+          left: 480px;
 
           z-index: 20;
 
         }
-        img{width: 100%;}
+        img {
+          width: 100%;
+        }
         #canvas {
           //  perspective: 800px;
           width: 140px;
-          height:186px ;
+          height: 186px;
 
           overflow: hidden;
           position: absolute;
-          top:26px;
-          left:10px;
-
+          top: 26px;
+          left: 10px;
 
         }
 
       }
-      #photo{
+      #photo {
         position: absolute;
-        left:888px;
+        left: 888px;
         top: 330px;
         width: 60px;
         height: 140px;
         z-index: 22;
-        img{width: 100%;}
+        img {
+          width: 100%;
+        }
         #c {
           //  perspective: 800px;
           width: 52px;
-          height:88px ;
+          height: 88px;
 
           overflow: hidden;
           position: absolute;
-          top:24px;
-          left:6px;
-
+          top: 24px;
+          left: 6px;
 
         }
         @media (max-width: 991px) {
-          top:100px;
-          left:660px;
+          top: 100px;
+          left: 660px;
 
           z-index: 20;
 
@@ -823,7 +919,7 @@
 
       // 云镜眼
       .large-header {
-        position:absolute;
+        position: absolute;
         width: 270px;
         //  background: #333;
         overflow: hidden;
@@ -847,8 +943,8 @@
         text-align: center;
         top: 50%;
         left: 50%;
-        -webkit-transform: translate3d(-50%,-50%,0);
-        transform: translate3d(-50%,-50%,0);
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0);
       }
 
       .demo-1 .main-title {
@@ -861,7 +957,7 @@
         font-weight: 200;
       }
 
-      @media only screen and (max-width : 768px) {
+      @media only screen and (max-width: 768px) {
         .demo-1 .main-title {
           font-size: 3em;
         }
