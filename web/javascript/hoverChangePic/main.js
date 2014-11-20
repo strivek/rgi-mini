@@ -66,18 +66,20 @@ require(["jquery","hoverChangePic/jquery.lightbox-0.5"], function () {
     //block10、block9鼠标滑过左右拉开,文字溅隐溅显
     var $yunj=$(".yunj");
     var $pic9=$(".block_9 .pic");
+    var $pic9radio=$(".block_9 .pic .radio");
     var $pic10=$(".block_10 .pic");
+    var $pic10radio=$(".block_10 .pic .radio");
     var $msg10=$(".block_10 .message .text");
     var $msg9=$(".block_9 .message .text");
 
-    $pic9.on("mouseenter",function(){
-        $yunj.data("sld","pic10");
+    $pic9radio.on("click",function(){
+       /* $yunj.data("sld","pic10");*/
         $pic10.css('left',"100%");
         $msg10.fadeIn(2000);
     });
 
-    $pic10.on("mouseenter",function(){
-        $yunj.data("sld","pic9");
+    $pic10radio.on("click",function(){
+      /*  $yunj.data("sld","pic9");*/
         $pic9.css('left',"-100%");
         $msg9.fadeIn(2000);
 

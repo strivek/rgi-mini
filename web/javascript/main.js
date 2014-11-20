@@ -1,12 +1,12 @@
 require.config({
     baseUrl: "javascript",
-    packages: ["hoverChangePic","exper","c",'canvas','yan','canvas2'],
+    packages: ["hoverChangePic","crs","exper","c",'canvas','yan','canvas2'],
     paths: {
         jquery: 'lib/jquery.min'
     }
 });
-
 require(['hoverChangePic']);
+require(['crs']);
 require(['exper']);
 require(['c']);
 require(['canvas']);

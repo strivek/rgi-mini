@@ -158,7 +158,7 @@ define(['jquery'], function ($) {
 				var arrPageSizes = ___getPageSize();
 				// Style overlay and show it
 				$('#jquery-overlay').css({
-					width:		arrPageSizes[0],
+					width:	arrPageSizes[0],
 					height:		arrPageSizes[1]
 				});
 				// Get page scroll
