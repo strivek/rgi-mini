@@ -17,19 +17,21 @@ require(["jquery","hoverChangePic/jquery.lightbox-0.5"], function () {
     var $ydhl=$hd_list.find(".ydhl");
     var $d_radio=$hd_list.find(".d_radio");
 
-   /* $("body").animate({'scrollTop':0},1000);*/
 
-    //点击页面顶部按钮，页面下拉
+
+    //点击页面头部展开之后向下按钮，页面下拉
     $d_radio.on("click",function(){
     $("body").animate({'scrollTop':800},1000);
     });
 
     //顶部菜单按钮，单击展开下拉菜单
     $menu.on("click",function(){
+
         if($hd_list.height()==0)
-        { $(this).find(".icon").hide().siblings(".icon2").show(); //鼠标点击，按钮旋转90度
+        { $("body").animate({'scrollTop':0},1000);
+            $(this).find(".icon").hide().siblings(".icon2").show(); //鼠标点击，按钮旋转90度
             $logo.css({"left":"20px","margin-left":"0"});//瑞观logo移动到左边
-            $hd_h1.fadeOut(1000); //页面顶部文字“移动互联时代的海豚梦”逐渐隐藏
+            $hd_h1.fadeOut(500); //页面顶部文字“移动互联时代的海豚梦”逐渐隐藏
 
             $hd_list.animate({"height":"291px"},function(){ //下拉框的高度逐渐变大
                 $t_h1.animate({"margin-top":"42px"},function(){
@@ -64,7 +66,8 @@ require(["jquery","hoverChangePic/jquery.lightbox-0.5"], function () {
    $block.on("mouseleave",leave);
 
     //block10、block9鼠标滑过左右拉开,文字溅隐溅显
-    var $yunj=$(".yunj");
+    var $btn9=$(".block_9 .message .btn");
+    var $btn10=$(".block_10 .message .btn");
     var $pic9=$(".block_9 .pic");
     var $pic9radio=$(".block_9 .pic .radio");
     var $pic10=$(".block_10 .pic");
@@ -73,30 +76,18 @@ require(["jquery","hoverChangePic/jquery.lightbox-0.5"], function () {
     var $msg9=$(".block_9 .message .text");
 
     $pic9radio.on("click",function(){
-       /* $yunj.data("sld","pic10");*/
-        $pic10.css('left',"100%");
-        $msg10.fadeIn(2000);
+        $pic10.animate({'left':"100%"},function(){ $msg10.fadeIn(2000);});
     });
 
     $pic10radio.on("click",function(){
-      /*  $yunj.data("sld","pic9");*/
-        $pic9.css('left',"-100%");
-        $msg9.fadeIn(2000);
-
+        $pic9.animate({'left':"-100%"},function(){ $msg9.fadeIn(2000);});
     });
 
-    $yunj.on("mouseleave",function(){
-        var sld=$(this).data("sld");
-        if(sld=="pic10")
-        {
-            $pic10.css('left',"0");
-            $msg10.fadeOut();
-        }
-     else if(sld=="pic9")
-        {
-            $pic9.css("left","0");
-            $msg9.fadeOut();
-        }
+   $btn9.on("click",function(){
+       $msg9.fadeOut(300,function(){ $pic9.css('left',"0");});
+    });
+    $btn10.on("click",function(){
+        $msg10.fadeOut(300,function(){ $pic10.css("left","0");});
     });
 
 
