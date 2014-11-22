@@ -26,6 +26,7 @@
   .head_show {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
     box-sizing: border-box;
     position: relative;
     padding-left: 20px;
@@ -69,19 +70,6 @@
           width: 100%;
         }
       }
-      /*      .slide_rg {
-              margin-top: 10px;
-              width: 78px;
-              -webkit-transition: all 0.2s;
-              -moz-transition: all 0.2s;
-              -ms-transition: all 0.2s;
-              -o-transition: all 0.2s;
-              transition: all 0.2s;
-              img {
-                width: 100%;
-                display: block;
-              }
-            }*/
     }
     .link {
       -webkit-transition: all 1s;
@@ -170,12 +158,20 @@
     -ms-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
+
     .img_bg {
       width: 100%;
       img {
         width: 100%;
         display: block;
       }
+    }
+    #canvas0{
+      position:absolute;
+      top:21px;
+      left:20px;
+      height:264px;
+      width:95%;
     }
     .text {
       position: absolute;
@@ -235,8 +231,8 @@
       .d_radio {
         display: block;
         margin: -235px auto 0;
-        width: 30px;
-        height: 30px;
+        width: 34px;
+        height: 34px;
         cursor: pointer;
         -webkit-transition: all 0.8s;
         -moz-transition: all 0.8s;
@@ -252,7 +248,6 @@
   }
   .banner {
     width: 100%;
-
     img {
       display: block;
       width: 100%;
@@ -283,11 +278,11 @@
           height: auto;
           opacity: 0;
           filter: alpha(opacity=0);
-         /* -webkit-transition: all 0.5s;
-          -moz-transition: all 0.5s;
-          -ms-transition: all 0.5s;
-          -o-transition: all 0.5s;
-          transition: all 0.5s;*/
+         -webkit-transition: all 1.2s;
+          -moz-transition: all 1.2s;
+          -ms-transition: all 1.2s;
+          -o-transition: all 1.2s;
+          transition: all 1.2s;
         }
         .shade {
           display: block;
@@ -378,9 +373,9 @@
             img {
               width: 100%;
               -webkit-transition: all 0.5s;
-              -moz-transition: all 1s;
-              -ms-transition: all 1s;
-              -o-transition: all 1s;
+              -moz-transition: all 0.5s;
+              -ms-transition: all 0.5s;
+              -o-transition: all 0.5s;
               transition: all 0.5s;
             }
             &:hover {
@@ -392,14 +387,6 @@
                 transform: rotate(90deg);
               }
             }
-          }
-        }
-        &:hover {
-          .showPic2, .showPic1,img {
-           -moz-transform:scale(1.1);
-            -ms-transform:scale(1.1);
-            -webkit-transform:scale(1.1);
-            transform: scale(1.1);
           }
         }
       }
@@ -629,11 +616,12 @@
           font-size: 16px;
           line-height: 18px;
           color: #fff;
-          box-sizing: border-box;
           -webkit-box-sizing: border-box;
           -moz-border-sizing: border-box;
+          -ms-border-sizing:border-box;
+          box-sizing: border-box;
           .btn {
-            display: block;
+            display: inline-block;
             position: absolute;
             width: 40px;
             top: 20px;
@@ -649,7 +637,9 @@
               margin-top: 20px;
             }
           }
-          h2{ margin-top: 60px; font-family: "黑体";font-size:20px;
+          h2{ margin-top: 60px;
+            font-family: "黑体";
+            font-size:20px;
             @media (max-width:1120px) {
               margin-top:10px;
               font-size:16px;
@@ -681,6 +671,10 @@
           .heng {
             background: #fff;
           }
+          .btn{
+            position: static;
+            margin-top:17%;
+             }
         }
       }
       .block_9 .pic,.block_10 .pic{
@@ -703,13 +697,12 @@
           height: 40px;
           display: block;
           cursor: pointer;
-          margin-top: 20px;
+          margin-top: 30px;
           img{width:40px;}
         }}
       }
       .block_9 .pic {
         .tex_con {
-
           h2 {
             margin-top: 10%;
             @media (max-width:1120px) {
@@ -717,7 +710,8 @@
             }
             padding-left: 20px;
             font-size: 16px;
-            font-weight: bold;
+            font-weight:bold;
+            font-family: "微软雅黑";
           }
           h1 {
             margin-top: 30%;
@@ -726,6 +720,8 @@
             }
             padding-left: 20px;
             font-size: 28px;
+            font-family: "微软雅黑";
+            font-weight:normal;
             cursor: pointer;
           }
           &:hover {
@@ -736,6 +732,7 @@
           p.change {
             font-size: 14px;
             padding-left: 20px;
+            font-family: "微软雅黑";
             color: #221815;
             margin-top: 18px;
             -webkit-transition: all 1.5s;
@@ -761,7 +758,7 @@
           font-family: "微软雅黑";
           h2 {
             padding-right: 20px;
-            margin-top: 10%;
+            margin-top: 4%;
             @media (max-width:1120px) {
               margin-top: 4%;
             }
@@ -785,7 +782,7 @@
             font-weight: normal;
             text-align: right;
           }
-          .change {margin-top: 15%;
+          .change {margin-top: 11%;
             @media (max-width:1120px) {
               margin-top: 4%;
             }
@@ -793,7 +790,7 @@
               padding-right: 20px;
               display: block;
               font-family: "微软雅黑";
-              font-size: 26px;
+              font-size: 25px;
               text-align: right;
               @media (max-width:1120px) {
                font-size:18px;
@@ -819,6 +816,7 @@
             .radio{
               padding-right: 20px;
               text-align: right;
+              margin-top: 50px;
               img{ display:inline-block;
                 width:40px;}
             }
@@ -869,15 +867,6 @@
           -o-transition: all 1.5s;
           transition: all 1.5s;
           overflow: hidden;
-
-        }
-        &:hover {
-       .showPic1  img ,.showPic2  img{
-            -webkit-transform: scale(1.2);
-         -moz-transform: scale(1.2);
-         -ms-transform: scale(1.2);
-            transform: scale(1.2);
-          }
         }
       }
 
@@ -891,14 +880,23 @@
       #experience {
         //  perspective: 800px;
         width: 100%;
-
         overflow: hidden;
         position: absolute;
-        top: 80px;
+        top: 0px;
         left: 0;
-        height: 350px;
+        height: 430px;
         z-index: 20;
+        #canvas {
+          width: 100%;
+          position: absolute;
+          top: 0px;
+          left: 0;
+          height: 430px;
+          z-index: 20;
+
+        }
       }
+
       #lines {
         position: absolute;
         top: 0;
@@ -930,15 +928,6 @@
 
       }
 
-      //.canvas2 {
-      //  position: absolute;
-      //  left:20px;
-      //  top: 60px;
-      //  width: 396px;
-      //  height:200px;
-      //  background-color: rgba(0,0,0,.2);
-      //}
-
       #macbook {
         position: absolute;
         left: 400px;
@@ -948,9 +937,6 @@
 
         z-index: 22;
         @media (max-width: 991px) {
-          //    top:40px;
-          //    left:400px;
-          //    z-index: 20;
           display: none;
 
         }
@@ -973,17 +959,7 @@
         img {
           width: 100%;
         }
-        #canvas {
-          //  perspective: 800px;
-          width: 140px;
-          height: 186px;
 
-          overflow: hidden;
-          position: absolute;
-          top: 26px;
-          left: 10px;
-
-        }
 
       }
       #photo {
@@ -997,7 +973,6 @@
           width: 100%;
         }
         #c {
-          //  perspective: 800px;
           width: 52px;
           height: 88px;
 
@@ -1031,9 +1006,6 @@
         top: 48px;
       }
 
-      //#large-header {
-      //  background-image: url('../images/yun-bg.jpg');
-      //}
 
       .main-title {
         position: absolute;
@@ -1130,25 +1102,25 @@
         .menu_r{float: right;}
       }
     }
-    .link {
-      width: 100%;
-      display: table;
-      a {
-        display: table-cell;
-        width: 1%;
-        height: 40px;
-        img {
-          display: block;
-          width: 100%;
-        }
-      }
-    }
-    .copyright {
-      width: 100%;
-      img {
 
+  }
+  .link {
+    width: 100%;
+    display: block;
+    font-size: 0;
+    a {
+      display:inline-block;
+      width:20%;
+      img {
+        display: block;
         width: 100%;
       }
+    }
+  }
+  .copyright {
+    width: 100%;
+    img {
+      width: 100%;
     }
   }
 }

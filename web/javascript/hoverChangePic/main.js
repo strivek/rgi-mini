@@ -20,8 +20,10 @@ require(["jquery","hoverChangePic/jquery.lightbox-0.5"], function () {
 
 
     //点击页面头部展开之后向下按钮，页面下拉
-    $d_radio.on("click",function(){
-    $("body").animate({'scrollTop':800},1000);
+  $( ".d_radio").on("click",function(){
+//      $(window).animate({scrollTop:800},1000)
+      $(window).scrollTop(800);
+//   $(window).scrollTop(800);
     });
 
     //顶部菜单按钮，单击展开下拉菜单

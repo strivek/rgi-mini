@@ -1,6 +1,4 @@
 require(["jquery"], function () {
-
-
     var experience = {
         page : null,
         resize: null,
